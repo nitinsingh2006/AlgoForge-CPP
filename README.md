@@ -16,6 +16,12 @@ GitHub Actions generates, validates, commits, and pushes the daily DSA solutions
 
 Each run stores the generated practice files in a date-based folder under `solutions/`.
 
+## Usage Example
+
+To generate the daily set manually, open the repository's **Actions** tab, select the
+generation workflow, choose **Run workflow**, and start it. After the run completes,
+review the new files in `solutions/YYYY-MM-DD/`.
+
 ## Local checks
 
 Before opening a pull request, verify that the generator still compiles without running it:
