@@ -22,6 +22,14 @@ To generate the daily set manually, open the repository's **Actions** tab, selec
 generation workflow, choose **Run workflow**, and start it. After the run completes,
 review the new files in `solutions/YYYY-MM-DD/`.
 
+## Local checks
+
+Before opening a pull request, verify that the generator still compiles without running it:
+
+```bash
+python -m py_compile generate_solutions.py
+```
+
 ## Contributing
 
 To contribute, create a focused branch, update the documentation or workflow as needed, and open a pull request with a clear description of the change. Please avoid committing API keys or generated secrets.
